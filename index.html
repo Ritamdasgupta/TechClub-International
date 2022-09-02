@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css\bootstrap.min.css" />
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <title>TechClub International</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <!-- Internal CSS -->
+    <style>
+      /* CSS for title animation */
+      .animation h1 {
+        color: #ffffff;
+
+        font-size: 9vh;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 30em;
+        animation: title 7s steps(70, end);
+        animation-iteration-count: infinite;
+        margin-bottom: 40px;
+      }
+
+      @keyframes title {
+        from {
+          width: 0;
+          opacity: 1;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      /* CSS for hovering effect in images  */
+      .img-fluid:hover {
+        -ms-transform: scale(1.3); /* IE 9 */
+        -webkit-transform: scale(1.3); /* Safari 3-8 */
+        transform: scale(1.3);
+      }
+      .img-fluid {
+        transition: transform 0.5s ease;
+        border: 0;
+      }
+      /* Events page */
+      .carousel-inner > .item {
+        height: 100vh;
+      }
+      /* Meet the Team page CSS */
+      body {
+        background: #eee;
+      }
+
+      .name {
+        color: blue;
+      }
+
+      .work {
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      .about span {
+        font-size: 13px;
+      }
+
+      .v-profile {
+        color: blue;
+        cursor: pointer;
+      }
+
+      .box {
+        -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+        -moz-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+        box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+      }
+
+      .col-md-3 {
+        margin-top: 10px;
+      }
+      /* Footer CSS */
+      .footlink {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"
+          ><img src="logo.png " height="50px" width="50px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Blog">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Connect">Connect</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search" />
+            <button class="btn btn-dark" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Landing page -->
+    <div
+      id="Home"
+      class="p-5 bg-image justify-content-center align-text-center"
+      style="
+        background-image: url('dark-blue-ornament-texture-wallpaper-preview.jpg');
+        background-position: center;
+        height: 100vh;
+      "
+    >
+      <div
+        class="container"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <div class="animation">
+          <h1 class="display-1 text-white text-center p-5">
+            Welcome to TechClub!
+          </h1>
+        </div>
+      </div>
+      <p class="text-white text-center p-5" style="font-size: 120%">
+        We are an international student group interested<br />
+        in developing useful applications for the benefit of<br />
+        society, and sharpening our own skills in the process.
+      </p>
+      <!-- Line breaks added additionally -->
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- Projects page -->
+    <div
+      id="Projects"
+      class="Projects p-5"
+      style="
+        background-image: url('dark-blue-background-with-lines-gradient-abstract-design-in-simple-style-with-sharp-lines-pattern-for-websites-landing-pages-vector.jpg');
+        background-position: center;
+      "
+    >
+      <h3 class="display-3 text-white text-center p-5">Projects</h3>
+      <p class="text-white text-center p-3" style="font-size: 150%">
+        Here are some of our best projects<br />
+        of all time:
+      </p>
+      <!-- Using bootstrap grids for image alignment -->
+      <!-- Popovers have been used for image description. -->
+      <!-- A hover animation has also been added. -->
+      <div class="row justify-content-center">
+        <div class="col-md-3 p-2">
+          <a
+            href="https://github.com/sanjayaharshana/AnimTrap"
+            title="AnimTrap"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-content="A CSS framework for web animation."
+            ><img
+              src="project-planning-header@2x.png"
+              class="img-fluid"
+              alt="..."
+          /></a>
+        </div>
+        <div class="col-md-3 p-2">
+          <a
+            href="https://github.com/namila007/nb-twitter-bot"
+            title="TwitterBot"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-content="A personal Twitter bot."
+            ><img
+              src="project-planning-header@2x.png"
+              class="img-fluid"
+              alt="..."
+          /></a>
+        </div>
+
+        <div class="col-md-3 p-2">
+          <a
+            href="https://github.com/99x/timercpp"
+            title="timercpp"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-content="A setTimeout for c++ devs."
+            ><img
+              src="project-planning-header@2x.png"
+              class="img-fluid"
+              alt="..."
+          /></a>
+        </div>
+        <div class="w-100"></div>
+
+        <div class="col-md-3 p-2">
+          <a
+            href="https://github.com/neutralinojs/neutralinojs"
+            title="neutralinojs"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-content="A portable app dev framework."
+            ><img
+              src="project-planning-header@2x.png"
+              class="img-fluid"
+              alt="..."
+          /></a>
+        </div>
+        <div class="col-md-3 p-2">
+          <a
+            href="https://github.com/onl1ner/Weather"
+            title="Weather"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-content="A simple weather application in Java."
+            ><img
+              src="project-planning-header@2x.png"
+              class="img-fluid"
+              alt="..."
+          /></a>
+        </div>
+        <div class="col-md-3 p-2">
+          <a
+            href="https://github.com/onl1ner/Morse"
+            title="Morse"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-content="English to Morse translator."
+            ><img
+              src="project-planning-header@2x.png"
+              class="img-fluid"
+              alt="..."
+          /></a>
+        </div>
+      </div>
+      <!-- Line breaks added for aesthetics. -->
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <!-- Resources -->
+    <div
+      id="Resources"
+      class="Resources p-5"
+      style="
+        background-image: url('download.png');
+        background-position: center;
+        height: 150vh;
+        background-repeat: repeat-repeat;
+      "
+    >
+      <!-- We use accordion to list resources year-wise. -->
+      <h3 class="display-3 text-white text-center p-5">Resources</h3>
+      <div class="container p-5">
+        <div
+          class="accordion p-5"
+          id="accordionPanelsStayOpenExample"
+          style="width: 98%"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                2022-21
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/TSS-2021/tree/main/Intro%20to%20App%20Development"
+                      class="text-decoration-none"
+                      >Introduction to App Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/TSS-2021/tree/main/Fundamentals%20of%20MLOps"
+                      class="text-decoration-none"
+                      >Introduction to MLOps</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/TSS-2021/tree/main/Python%20%26%20its%20Applications"
+                      class="text-decoration-none"
+                      >Python and its Applications</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                2021-20
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/learners-space/tree/master/Web%20Development"
+                      class="text-decoration-none"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/algos-simplified/blob/master/Encryption_Algorithms/README.md"
+                      class="text-decoration-none"
+                      >Encryption</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/CodeInQuarantine/blob/master/Week_6_Backend/README.md"
+                      class="text-decoration-none"
+                      >Backend Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/CodeInQuarantine/blob/master/Week_2_CC/README.md"
+                      class="text-decoration-none"
+                      >Competitive Programming</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                <i class="fa fa-plus"></i>
+                2020-19
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a
+                      href="https://wiki.wncc-iitb.org/index.php/GSoC_Projects"
+                      class="text-decoration-none"
+                      >GSoC Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://wiki.wncc-iitb.org/index.php/Git"
+                      class="text-decoration-none"
+                      >Introduction to Git/Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/wncc/DSA-Learning-Series-2021"
+                      class="text-decoration-none"
+                      >DSA Preparation Booklet</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Events -->
+    <!-- We use bootstrap carousel for events page -->
+    <div id="Events" class="Events bg-black" style="height: 100vh">
+      <h3 class="display-3 text-white text-center p-5">Events</h3>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item item active">
+            <a href="https://wncc-iitb.org/events/event/intern_prep/"
+              ><img
+                src="intern_prep.jpeg"
+                class="w-100 carousel-img-width"
+                alt="..."
+            /></a>
+          </div>
+          <div class="carousel-item item">
+            <a href="https://wncc-iitb.org/events/event/game-development/"
+              ><img
+                src="game_development.jpeg"
+                class="w-100 carousel-img-width"
+                alt="..."
+            /></a>
+          </div>
+          <div class="carousel-item item">
+            <a href="https://wncc-iitb.org/events/event/code-games/"
+              ><img
+                src="code_games.jpeg"
+                class="w-100 carousel-img-width"
+                alt="..."
+            /></a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Team -->
+    <!-- We will use cards for listing team members -->
+    <div
+      id="Team"
+      class="Team p-5 mt-5"
+      style="
+        background-image: url('pngtree-circuit-board-pattern-isolated-on-black-background-picture-image_1170890.jpg');
+      "
+    >
+      <div class="container text-center mt-5 mb-2 p-5">
+        <h1 class="mb-0 text-white display-3 p-5">Meet the Team</h1>
+        <span class="text-white p-5" style="font-size: 170%"
+          >Some of the Core Members of our Club!</span
+        >
+      </div>
+      <div class="container mt-3 p-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="bg-white p-3 text-center rounded box">
+              <img
+                class="img-responsive rounded-circle"
+                src="joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+                width="90"
+              />
+              <h5 class="mt-3 name">Samuel Plamer</h5>
+              <span class="work d-block">Front-end Developer</span>
+              <div class="mt-4 about">
+                <span
+                  >He is a co-founder and has been one our oldest members.
+                </span>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/arpit-saxena/"
+                  button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="button"
+                  aria-pressed="false"
+                  autocomplete="off"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="bg-white p-3 text-center rounded box">
+              <img
+                class="img-responsive rounded-circle"
+                src="rafaella-mendes-diniz-et_78QkMMQs-unsplash (1).jpg"
+                width="90"
+              />
+              <h5 class="mt-3 name">Nancy Markus</h5>
+              <span class="work d-block">App Developer</span>
+              <div class="mt-4 about">
+                <span
+                  >Nancy is responsible for some of our most famous apps.</span
+                >
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/codeboy5"
+                  button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="button"
+                  aria-pressed="false"
+                  autocomplete="off"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="bg-white p-3 text-center rounded box">
+              <img
+                class="img-responsive rounded-circle"
+                src="ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg"
+                width="90"
+              />
+              <h5 class="mt-3 name">Martha Col</h5>
+              <span class="work d-block">Back-end Developer</span>
+              <div class="mt-4 about">
+                <span
+                  >Martha is another co-founder and a well-respected back-end
+                  dev.
+                </span>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/kshitijalwadhi"
+                  button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="button"
+                  aria-pressed="false"
+                  autocomplete="off"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="bg-white p-3 text-center rounded box">
+              <img
+                class="img-responsive rounded-circle"
+                src="ian-dooley-d1UPkiFd04A-unsplash.jpg"
+                width="90"
+              />
+              <h5 class="mt-3 name">Ian Jones</h5>
+              <span class="work d-block">Web Developer</span>
+              <div class="mt-4 about">
+                <span>He is the guy who developed this beautiful website.</span>
+              </div>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/Ritamdasgupta"
+                  button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="button"
+                  aria-pressed="false"
+                  autocomplete="off"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blogs -->
+    <!-- We use the same format here as in Projects -->
+    <div
+      id="Blog"
+      class="Blog p-5"
+      style="background-image: url('download.png'); background-position: center"
+    >
+      <div class="container text-center p-3">
+        <h3 class="display-3 text-white text-center p-5">Blogs</h3>
+        <p class="text-white text-center p-3" style="font-size: 150%">
+          Welcome to the blog section!<br />
+          Here are some interesting blogs written by us:
+        </p>
+        <div class="container text-center p-3">
+          <div class="row justify-content-center">
+            <div class="col-md-2 p-2">
+              <a
+                href="https://wncc-iitb.org/blogs/sprinklr.html"
+                title="Sprinkr"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                data-bs-content="Why Sprinklr hired me."
+                ><img src="sprinklr.jpg" class="img-fluid w-100" alt="..."
+              /></a>
+            </div>
+            <div class="col-md-2 p-2">
+              <a
+                href="https://basil08.github.io/"
+                title="Basil's blog"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                data-bs-content="A personal blog."
+                ><img src="download1.jpg" class="img-fluid" alt="..."
+              /></a>
+            </div>
+            <div class="col-md-2 p-2">
+              <a
+                href="https://wncc-iitb.org/blogs/ms-engage.html"
+                title="Microsoft Engage"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                data-bs-content="My journey towards Microsoft."
+                ><img src="microsoft.jpeg" class="img-fluid" alt="..."
+              /></a>
+            </div>
+            <div class="col-md-2 p-2">
+              <a
+                href="https://wncc-iitb.org/blogs/icpc.html"
+                title="ICPC World Finals"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                data-bs-content="A study in Competitive Programming."
+                ><img src="icpc.jpeg" class="img-fluid" alt="..."
+              /></a>
+            </div>
+
+            <div class="col-md-2 p-2">
+              <a
+                href="https://wncc-iitb.org/blogs/amex.html"
+                title="American Express"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                data-bs-content="How I got into the American Express."
+                ><img
+                  src="225px-American_Express_logo_(2018).svg.png"
+                  class="img-fluid"
+                  alt="..."
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Connect -->
+    <!-- Bootstrap forms has been used. -->
+    <div
+      id="Connect"
+      class="Connect p-5"
+      style="background-image: url('download.png'); height: 160vh"
+    >
+      <h3 class="display-3 text-white text-center p-5">Connect with Us!</h3>
+      <div
+        class="container border border-dark mt-5 p-5"
+        style="background-color: black; border-radius: 3%"
+      >
+        <form action="/action_page.php">
+          <div class="mb-5 mt-5">
+            <label for="name" class="form-label text-white">Name:</label>
+            <input
+              type="name"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+              name="name"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="email" class="form-label text-white">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              name="email"
+            />
+          </div>
+          <div class="mb-5 mt-3">
+            <label for="messages" class="text-white mb-2">Messages:</label>
+            <textarea
+              class="form-control"
+              rows="5"
+              id="messages"
+              name="text"
+              placeholder="Write Message"
+            ></textarea>
+          </div>
+          <div class="col md-12 text-center">
+            <button type="submit" class="btn btn-primary text-center">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 bg-success text-white">
+        © 2022 Copyright:
+        <a class="footlink" href="/"> TechClub.com</a>
+      </div>
+    </footer>
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+  </body>
+</html>
