@@ -4,6 +4,11 @@ A generic website for a technical/programming club.
 # Website link
 https://ritamdasgupta.github.io/TechClub-International/
 
+
+Figma Design Template Link:
+https://www.figma.com/file/4Ipcc3NaSCtuhouiLxeq0T/DEVCLUB_WEBSITE?node-id=0%3A1
+
+
 # Introduction
 This website has been made using Bootstrap 5, which I imported locally. CSS is mostly inline, and a few lines have been included internally with comments.
 The basic design template for the website has also been provided, which i made using Figma. However, during implementation, i learnt about numerous Bootstrap functionalities such as carousels, popovers, accordions and cards, and accordingly included them in my webpage.
@@ -30,11 +35,11 @@ To enhance the user experience, popovers have been added to each image which tri
 All the projects have working links, to various github repos i found interesting.
 
 # Resources
-Although my initial idea (as can be seen from the Figma file) was to use the same format for this page as for "Projects", I found it a bit repetitive. While going through the IITD DevClub site, I saw that accordions were used for this purpose, a format I liked. So i p to borrow this format and made my page in the same way. The links are functional and point to WnCC(IIT Bombay) resources.
+Although my initial idea (as can be seen from the Figma file) was to use the same format for this page as for "Projects", I found it a bit repetitive. While going through the IITD DevClub site, I saw that accordions were used for this purpose, a format I liked. So i borrowed this format and made my page in the same way. The links are functional and point to WnCC(IIT Bombay) resources.
 The only problem I faced here was that the accordion, when fully opened, extended beyond the background image. My attempt to fix this was to put the entire accordion object inside a container, and have the background as a parent element to this container.  I also made the background image itself larger (putting "height:150vh" in the style attribute). This ensured that the background image was large enough to cover the entire accordion in my desktop. However, I noticed this did not work on my phone. Later in my final submission i removed the height specification for background to let Bootstrap automatically adjust it, and instead added some line breaks to make my page larger. This final solution worked on all devices i tested.
 
 # Events
-I found documentation about carousels on getbootstrap.com, which i found interesting and decided to implement it. This page did not give me any significant problems. The picture dimensions might be a bit off depending upon screen dimensions, but i think that is not an implementation fault, just that the picture dimensions do not match the screen. This page seems to render better on mobile phones than the desktop. I again used WnCC material for content, as posters for DevClub events seemed unavailable.
+I found documentation about carousels on [www.getbootstrap.com](https://getbootstrap.com/docs/5.2/components/carousel/), which i found interesting and decided to implement it. This page did not give me any significant problems. The picture dimensions might be a bit off depending upon screen dimensions, but i think that is not an implementation fault, just that the picture dimensions do not match the screen. This page seems to render better on mobile phones than the desktop. I again used WnCC material for content, as posters for DevClub events seemed unavailable.
 
 # Team
 Decided to use cards for this. This renders fine on all devices i tested too. Used buttons for the "View Profile", which all link to different DevClub seniors, except one :). Aligned the cards using a Bootstrap grid.
