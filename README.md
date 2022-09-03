@@ -65,3 +65,4 @@ I used www.unsplash.com for photos and background images.
 
 # Tests
 I tested the mobile-friendliness of the website on https://search.google.com/test/mobile-friendly, and it passed. I also tested on various devices I have including tablets, laptop and a mobile phone and it appears responsive.
+One problem i noticed on my phone were that firstly, the "Welcome" animation goes slightly off-screen on the phone. I tried to fix this by putting the text in a container and introducing left and right margins, but this did not fix it. I also tried padding it but it still did not get fixed.
